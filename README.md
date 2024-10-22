@@ -1,3 +1,29 @@
+# Project Setup
+This was built using [v0.dev](https://v0.dev). I am not a frontend Typescript developer nor do I pretend to be.  That said, tips & criticisms are welcome.
+
+```bash
+npx create-next-app@latest my-app
+cd my-app
+npx shadcn@latest init
+vim package.json
+
+# Note: I needed to edit this file to update REACT dependencies as follows:
+
+# "dependencies": {
+#   "react": "^18.2.0",
+#   "react-dom": "^18.2.0"
+#   // other dependencies...
+# }
+
+# The original REACT and REACT-DOM were 19.x.x and looked very experimental
+
+npm install
+
+# needed to remove components.json
+rm components.json
+npx shadcn@latest init
+```
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
